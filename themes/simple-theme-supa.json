@@ -111,7 +111,7 @@
         "editorOverviewRuler.background": "#25252500",
         "editorOverviewRuler.border": "#7f7f7f4d",
         "editorError.foreground": "#f82871",
-        "editorWarning.foreground": "#d0d0c8",
+        "editorWarning.foreground": "#fa973a",
         "editorInfo.foreground": "#3ecf8e",
         "editorGutter.background": "#171717",
         "editorGutter.modifiedBackground": "#5c5014",
@@ -209,7 +209,7 @@
         "gitDecoration.untrackedResourceForeground": "#73c991",
         "editorMarkerNavigation.background": "#202020",
         "editorMarkerNavigationError.background": "#f82871",
-        "editorMarkerNavigationWarning.background": "#d0d0c8",
+        "editorMarkerNavigationWarning.background": "#fa973a",
         "editorMarkerNavigationInfo.background": "#3ecf8e",
         "merge.currentHeaderBackground": "#367366",
         "merge.currentContentBackground": "#27403B",
@@ -248,7 +248,7 @@
         "minimap.findMatchHighlight": "#11a79366",
         "minimap.selectionHighlight": "#1f1f1f",
         "minimap.errorHighlight": "#f82871",
-        "minimap.warningHighlight": "#d0d0c8",
+        "minimap.warningHighlight": "#fa973a",
         "minimap.background": "#1e2025",
         "sideBar.dropBackground": "#383b3d",
         "editorGroup.emptyBackground": "#1e2025",
@@ -264,6 +264,7 @@
       "semanticHighlighting": true,
       "semanticTokenColors": {
         "variable": "#ffffff",
+        "variable.defaultLibrary": "#bda4ff",
         "parameter": "#ffffff",
         "builtinAttribute": "#bda4ff",
         "builtinType": "#bda4ff",
@@ -307,7 +308,7 @@
         },
         {
           "name": "type",
-          "scope": "entity.name.type",
+          "scope": "entity.name.type, variable.other.constant",
           "settings": {
             "foreground": "#3ecf8e"
           }
@@ -328,7 +329,7 @@
         },
         {
           "name": "keyword",
-          "scope": "support.function.misc,support.type.property-name.css, entity.name.tag, keyword.operator.new, storage.type, keyword.control, keyword.operator.expression, support.type.primitive, constant.language, storage.modifier",
+          "scope": "support.type,support.function.misc,support.type.property-name.css, entity.name.tag, keyword.operator.new, storage.type, keyword.control, keyword.operator.expression, support.type.primitive, constant.language, storage.modifier",
           "settings": {
             "foreground": "#bda4ff"
           }
@@ -349,7 +350,7 @@
         },
         {
           "name": "operator",
-          "scope": "keyword.operator, storage.type.function.arrow",
+          "scope": "keyword.other.important.css, support.constant.vendored.property-value,support.constant.property-value,keyword.operator, storage.type.function.arrow",
           "settings": {
             "foreground": "#ffcda1"
           }

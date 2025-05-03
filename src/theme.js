@@ -132,7 +132,7 @@ function schema({ name, colors, styles }) {
         "editorOverviewRuler.background": "#25252500",
         "editorOverviewRuler.border": "#7f7f7f4d",
         "editorError.foreground": "#f82871",
-        "editorWarning.foreground": "#d0d0c8",
+        "editorWarning.foreground": "#fa973a",
         "editorInfo.foreground": "${colors.type}",
         "editorGutter.background": "#171717",
         "editorGutter.modifiedBackground": "#5c5014",
@@ -230,7 +230,7 @@ function schema({ name, colors, styles }) {
         "gitDecoration.untrackedResourceForeground": "#73c991",
         "editorMarkerNavigation.background": "#202020",
         "editorMarkerNavigationError.background": "#f82871",
-        "editorMarkerNavigationWarning.background": "#d0d0c8",
+        "editorMarkerNavigationWarning.background": "#fa973a",
         "editorMarkerNavigationInfo.background": "${colors.type}",
         "merge.currentHeaderBackground": "#367366",
         "merge.currentContentBackground": "#27403B",
@@ -269,7 +269,7 @@ function schema({ name, colors, styles }) {
         "minimap.findMatchHighlight": "#11a79366",
         "minimap.selectionHighlight": "#1f1f1f",
         "minimap.errorHighlight": "#f82871",
-        "minimap.warningHighlight": "#d0d0c8",
+        "minimap.warningHighlight": "#fa973a",
         "minimap.background": "#1e2025",
         "sideBar.dropBackground": "#383b3d",
         "editorGroup.emptyBackground": "#1e2025",
@@ -285,6 +285,7 @@ function schema({ name, colors, styles }) {
       "semanticHighlighting": true,
       "semanticTokenColors": {
         "variable": "#ffffff",
+        "variable.defaultLibrary": "${colors.keyword}",
         "parameter": "#ffffff",
         "builtinAttribute": "${colors.keyword}",
         "builtinType": "${colors.keyword}",
@@ -328,7 +329,7 @@ function schema({ name, colors, styles }) {
         },
         {
           "name": "type",
-          "scope": "entity.name.type",
+          "scope": "entity.name.type, variable.other.constant",
           "settings": {
             "foreground": "${colors.type}"
           }
@@ -349,7 +350,7 @@ function schema({ name, colors, styles }) {
         },
         {
           "name": "keyword",
-          "scope": "support.function.misc,support.type.property-name.css, entity.name.tag, keyword.operator.new, storage.type, keyword.control, keyword.operator.expression, support.type.primitive, constant.language, storage.modifier",
+          "scope": "support.type,support.function.misc,support.type.property-name.css, entity.name.tag, keyword.operator.new, storage.type, keyword.control, keyword.operator.expression, support.type.primitive, constant.language, storage.modifier",
           "settings": {
             "foreground": "${colors.keyword}"
           }
@@ -370,7 +371,7 @@ function schema({ name, colors, styles }) {
         },
         {
           "name": "operator",
-          "scope": "keyword.operator, storage.type.function.arrow",
+          "scope": "keyword.other.important.css, support.constant.vendored.property-value,support.constant.property-value,keyword.operator, storage.type.function.arrow",
           "settings": {
             "foreground": "${colors.string}"
           }
