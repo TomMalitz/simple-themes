@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:export>
+      <bx:file format="png" href="#object-0"/>
+      <bx:file format="png" href="#object-1" path="Untitled 2.png"/>
+      <bx:file format="png" href="#object-2" path="Untitled 3.png"/>
+      <bx:file format="png" href="#object-3" path="Untitled 4.png"/>
+      <bx:file format="png" href="#object-4" path="Untitled 5.png"/>
+      <bx:file format="png" href="#object-5" path="Untitled 6.png"/>
+    </bx:export>
+  </defs>
+  <g id="object-5" style="" transform="matrix(2.207482, 0, 0, 2.163077, -288.487518, -200.258682)">
+    <ellipse style="fill: rgb(37, 41, 49); stroke: rgb(38, 41, 51);" cx="238.444" cy="203.213" rx="66.978" ry="67.297" transform="matrix(1, 0, -0.002614, 1, 5.667363, 7.860588)" id="object-0"/>
+    <text style="fill: rgb(242, 156, 20); font-family: &quot;Zed Mono&quot;; font-size: 28px; white-space: pre;" transform="matrix(6.980561, 0, 0, 3.015813, -1426.728516, -408.748322)" x="231.486" y="217.981" id="object-1">Z</text>
+    <text style="fill: rgb(254, 229, 108); font-family: &quot;Zed Mono&quot;; font-size: 28px; white-space: pre;" transform="matrix(6.980561, 0, 0, 3.015813, -1430.191772, -411.222137)" x="231.486" y="217.981" id="object-2">Z</text>
+    <text style="fill: rgb(18, 153, 126); font-family: &quot;Zed Mono&quot;; font-size: 28px; white-space: pre;" transform="matrix(6.980561, 0, 0, 3.015813, -1433.67981, -413.65451)" x="231.486" y="217.981" id="object-3">Z</text>
+    <text style="fill: rgb(13, 231, 197); font-family: &quot;Zed Mono&quot;; font-size: 28px; white-space: pre;" transform="matrix(6.980561, 0, 0, 3.015813, -1437.001953, -416.493591)" x="231.486" y="217.981" id="object-4">Z</text>
+  </g>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="298.03" y="99.735"> </text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="65.677" y="178.749"> </text>
+</svg>

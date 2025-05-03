@@ -1,0 +1,3 @@
+.token
+*.vsix
+node_modules

@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      filewatcher:
+        specifier: ^3.0.1
+        version: 3.0.1
+
+packages:
+
+  debounce@1.2.1:
+    resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
+
+  filewatcher@3.0.1:
+    resolution: {integrity: sha512-Fro8py2B8EJupSP37Kyd4kjKZLr+5ksFq7Vbw8A392Z15Unq8016SPUDvO/AsDj5V6bbPk98PTAinpc5YhPbJw==}
+
+snapshots:
+
+  debounce@1.2.1: {}
+
+  filewatcher@3.0.1:
+    dependencies:
+      debounce: 1.2.1

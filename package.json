@@ -1,0 +1,39 @@
+{
+  "name": "simplethemes",
+  "icon": "assets/icon.png",
+  "displayName": "Simple Themes",
+  "description": "Simple themes with a few colors to signify high-level syntax groupings.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "tommalitz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomMalitz/zedromeda.git"
+  },
+  "scripts": {
+    "dev": "node src/watcher"
+  },
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "supa",
+        "uiTheme": "vs-dark",
+        "path": "./themes/simple-theme-supa.json"
+      },
+      {
+        "label": "zandromeda",
+        "uiTheme": "vs-dark",
+        "path": "./themes/simple-theme-zandromeda.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "filewatcher": "^3.0.1"
+  }
+}
