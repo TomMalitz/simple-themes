@@ -298,6 +298,7 @@ function schema({ name, colors, styles }) {
         "constant": "${colors.type}",
         "type": "${colors.type}",
         "struct": "${colors.type}",
+        "struct.defaultLibrary": "${colors.keyword}",
         "class": "${colors.type}",
         "interface": "${colors.type}",
         "enum": "${colors.type}",

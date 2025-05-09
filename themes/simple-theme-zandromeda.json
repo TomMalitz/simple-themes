@@ -277,6 +277,7 @@
         "constant": "#08e7c5",
         "type": "#08e7c5",
         "struct": "#08e7c5",
+        "struct.defaultLibrary": "#10a793",
         "class": "#08e7c5",
         "interface": "#08e7c5",
         "enum": "#08e7c5",
