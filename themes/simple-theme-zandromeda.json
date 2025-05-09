@@ -282,6 +282,7 @@
         "interface": "#08e7c5",
         "enum": "#08e7c5",
         "enumMember": "#fee56c",
+        "enumMember.defaultLibrary": "#10a793",
         "namespace": "#08e7c5",
         "namespace.crateRoot": "#ffffff",
         "number": "#f29c14",

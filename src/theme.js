@@ -303,6 +303,7 @@ function schema({ name, colors, styles }) {
         "interface": "${colors.type}",
         "enum": "${colors.type}",
         "enumMember": "${colors.property}",
+        "enumMember.defaultLibrary": "${colors.keyword}",
         "namespace": "${colors.type}",
         "namespace.crateRoot": "#ffffff",
         "number": "${colors.string}",
