@@ -4,7 +4,8 @@ const supa = {
     keyword: "#bda4ff",
     type: "#3ecf8e",
     property: "#d0d0c8",
-    string: "#ffcda1"
+    literal: "#ffcda1",
+    constant: "#8cffcc"
   },
 }
 
@@ -14,7 +15,8 @@ const zandromeda = {
     keyword: "#10a793",
     type: "#08e7c5",
     property: "#fee56c",
-    string: "#f29c14"
+    literal: "#f29c14",
+    constant: "#96DF71"
   },
 }
 
@@ -25,7 +27,7 @@ function schema({ name, colors, styles }) {
       "colors": {
         "foreground": "#f7f7f8",
         "focusBorder": "#171717",
-        "selection.background": "#1f1f1f",
+        "selection.background": "#222",
         "scrollbar.shadow": "#00000000",
         "activityBar.foreground": "#f7f7f8",
         "activityBar.background": "#202020",
@@ -75,11 +77,11 @@ function schema({ name, colors, styles }) {
         "titleBar.inactiveForeground": "#aca8aeff",
         "titleBar.border": "#1a1a1a",
         "menubar.selectionForeground": "#f7f7f8",
-        "menubar.selectionBackground": "#1f1f1f",
+        "menubar.selectionBackground": "#222",
         "menu.foreground": "#f7f7f8",
         "menu.background": "#202020",
         "menu.selectionForeground": "#f7f7f8",
-        "menu.selectionBackground": "#1f1f1f",
+        "menu.selectionBackground": "#222",
         "menu.selectionBorder": "#00000000",
         "menu.separatorBackground": "#1a1a1a",
         "menu.border": "#1a1a1a",
@@ -103,13 +105,13 @@ function schema({ name, colors, styles }) {
         "editorLineNumber.foreground": "#565960",
         "editorCursor.foreground": "#5de4c7",
         "editorCursor.background": "#050505",
-        "editor.selectionBackground": "#1f1f1f",
+        "editor.selectionBackground": "#222",
         "editor.inactiveSelectionBackground": "#1f1f1f",
         "editorWhitespace.foreground": "#e3e4e229",
-        "editor.selectionHighlightBackground": "#1f1f1f",
-        "editor.selectionHighlightBorder": "${colors.type}",
+        "editor.selectionHighlightBackground": "#222",
+        "editor.selectionHighlightBorder": "#333",
         "editor.findMatchBackground": "#11a79366",
-        "editor.findMatchBorder": "${colors.type}",
+        "editor.findMatchBorder": "#333",
         "editor.findMatchHighlightBackground": "#333333",
         "editor.findMatchHighlightBorder": "#ffffff00",
         "editor.findRangeHighlightBackground": "#3a3d4166",
@@ -200,7 +202,7 @@ function schema({ name, colors, styles }) {
         "editorSuggestWidget.border": "#1a1a1a",
         "editorSuggestWidget.foreground": "#f7f7f8",
         "editorSuggestWidget.highlightForeground": "${colors.type}",
-        "editorSuggestWidget.selectedBackground": "#1f1f1f",
+        "editorSuggestWidget.selectedBackground": "#171717",
         "editorWidget.foreground": "#cccccc",
         "editorWidget.background": "#202020",
         "editorWidget.resizeBorder": "#5F5F5F",
@@ -250,7 +252,7 @@ function schema({ name, colors, styles }) {
         "peekViewResult.fileForeground": "#ffffff",
         "peekViewResult.lineForeground": "#bbbbbb",
         "peekViewResult.matchHighlightBackground": "#333",
-        "peekViewResult.selectionBackground": "#1f1f1f",
+        "peekViewResult.selectionBackground": "#222",
         "peekViewResult.selectionForeground": "#ffffff",
         "peekViewTitle.background": "#202020",
         "peekViewTitleDescription.foreground": "#f7f7f8",
@@ -294,21 +296,24 @@ function schema({ name, colors, styles }) {
         "keyword.crateRoot": "#ffffff",
         "macro": "${colors.keyword}",
         "field": "#ffffff",
-        "const": "${colors.type}",
-        "constant": "${colors.type}",
+        "field.static": "${colors.constant}",
+        "const": "${colors.constant}",
+        "constant": "${colors.constant}",
         "type": "${colors.type}",
         "struct": "${colors.type}",
         "struct.defaultLibrary": "${colors.keyword}",
         "class": "${colors.type}",
+        "class.defaultLibrary": "${colors.keyword}",
         "interface": "${colors.type}",
+        "interface.defaultLibrary": "${colors.keyword}",
         "enum": "${colors.type}",
-        "enumMember": "${colors.property}",
+        "enumMember": "${colors.constant}",
         "enumMember.defaultLibrary": "${colors.keyword}",
         "namespace": "${colors.type}",
         "namespace.crateRoot": "#ffffff",
-        "number": "${colors.string}",
-        "string": "${colors.string}",
-        "operator": "${colors.string}",
+        "number": "${colors.literal}",
+        "string": "${colors.literal}",
+        "operator": "${colors.literal}",
         "method": "${colors.property}",
         "function": "${colors.property}",
         "property": "${colors.property}",
@@ -368,14 +373,14 @@ function schema({ name, colors, styles }) {
           "name": "number",
           "scope": "constant.numeric",
           "settings": {
-            "foreground": "${colors.string}"
+            "foreground": "${colors.literal}"
           }
         },
         {
           "name": "operator",
           "scope": "keyword.other.important.css, support.constant.vendored.property-value,support.constant.property-value,keyword.operator, storage.type.function.arrow",
           "settings": {
-            "foreground": "${colors.string}"
+            "foreground": "${colors.literal}"
           }
         },
         {
@@ -396,14 +401,14 @@ function schema({ name, colors, styles }) {
           "name": "punctuation.delimiter",
           "scope": "punctuation.definition.template-expression, punctuation.definition.string.template",
           "settings": {
-            "foreground": "${colors.string}"
+            "foreground": "${colors.literal}"
           }
         },
         {
           "name": "string",
           "scope": "string.quoted, string.template, punctuation.definition.string",
           "settings": {
-            "foreground": "${colors.string}"
+            "foreground": "${colors.literal}"
           }
         },
         {
