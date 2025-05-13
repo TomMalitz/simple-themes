@@ -317,6 +317,7 @@ function schema({ name, colors, styles }) {
         "method": "${colors.property}",
         "function": "${colors.property}",
         "property": "${colors.property}",
+        "property.static": "${colors.constant}",
         "comment": "#afabb1ff"
       },
       "tokenColors": [

@@ -294,6 +294,7 @@
         "method": "#fee56c",
         "function": "#fee56c",
         "property": "#fee56c",
+        "property.static": "#96DF71",
         "comment": "#afabb1ff"
       },
       "tokenColors": [
